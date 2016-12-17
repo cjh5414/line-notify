@@ -1,6 +1,12 @@
 import sys
 import requests
 
+
+if len(sys.argv) != 3:
+    print('error: wrong arguments')
+    print('usage: python line-notify.py [ACCESS_TOKEN] [MESSAGE]')
+    sys.exit()
+
 ACCESS_TOKEN = sys.argv[1]
 MESSAGE = sys.argv[2]
 
